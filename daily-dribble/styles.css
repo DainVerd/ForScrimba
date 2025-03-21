@@ -1,0 +1,78 @@
+body {
+  font-family: Georgia, Geneva, Tahoma, sans-serif;
+  color: #121212;
+  margin: 0 24px;
+  padding: 0;
+}
+
+.topic {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  margin-bottom: 32px;
+}
+
+.stadium-advert-container {
+  display: block;
+  margin: 0 auto;
+  width: 380px; 
+  margin-bottom: 24px;
+}
+
+.stadium-img {
+  width: 380px;
+}
+
+.about {
+  padding: 0 16px;
+  font-size: 16px;
+}
+
+.thick-border {
+  border: 3px solid #121212;
+}
+
+.italic-text {
+  font-style: italic;
+}
+
+.light-font {
+  font-weight: lighter;
+}
+
+.email-prompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.submit-btn {
+  color: white;
+  background-color: #121212;
+  height: 64px;
+  width: 256px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.email-input {
+  text-align: center;
+  height: 64px;
+  margin-bottom: 8px;
+  width: 256px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.terms-of-service-text {
+   font-size: 16px;
+}
+
+a {
+   color: #121212;
+   border-bottom: 1px solid #121212;
+}
