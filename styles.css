@@ -36,5 +36,6 @@ p {
 
 .chat-btn:hover {
     cursor: pointer;
+    /* this color is little bit darken than #0ea5e9 */
     background-color: #0d94d1;
 }
