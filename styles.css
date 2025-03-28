@@ -1,0 +1,40 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #020202;
+    background-image: url("images/faded-office.png");
+    background-size: cover;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 32px;
+    margin-bottom: 48px;
+}
+
+.promt-column {
+    margin-top: 64px;
+    width: 30%;
+    margin-left: 64px;
+}
+
+.bottom-line {
+    border-bottom: 8px solid #0ea5e9;
+}
+
+.chat-btn {
+    background-color: #0ea5e9;
+    color: white;
+    width: 208px;
+    padding: 8px 16px;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.chat-btn:hover {
+    cursor: pointer;
+    background-color: #0d94d1;
+}
