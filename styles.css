@@ -15,16 +15,15 @@ p {
     margin-bottom: 48px;
 }
 
+/* article */
 .promt-column {
     margin-top: 64px;
     width: 30%;
     margin-left: 64px;
 }
 
-.bottom-line {
-    border-bottom: 8px solid #0ea5e9;
-}
 
+/* btn */
 .chat-btn {
     background-color: #0ea5e9;
     color: white;
@@ -38,4 +37,10 @@ p {
     cursor: pointer;
     /* this color is little bit darken than #0ea5e9 */
     background-color: #0d94d1;
+}
+
+/* general */
+
+.bottom-line {
+    border-bottom: 8px solid #0ea5e9;
 }
