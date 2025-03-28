@@ -1,0 +1,45 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #020202;
+    background-image: url("images/faded-office.png");
+    background-size: cover;
+}
+
+h1 {
+    font-size: 72px;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 32px;
+    margin-bottom: 48px;
+}
+
+/* article */
+.promt-column {
+    margin-top: 100px;
+    width: 30%;
+    margin-left: 64px;
+}
+
+/* btn */
+.chat-btn {
+    background-color: #0ea5e9;
+    color: white;
+    width: 208px;
+    padding: 8px 16px;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.chat-btn:hover {
+    cursor: pointer;
+    /* this color is little bit darken than #0ea5e9 */
+    background-color: #0d94d1;
+}
+
+/* general */
+
+.bottom-line {
+    border-bottom: 8px solid #0ea5e9;
+}
