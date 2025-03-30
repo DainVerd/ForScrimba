@@ -1,6 +1,115 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
 body {
-    font-family: "Open Sans", sans-serif;
-    color: #020202;
-    background-image: url("images/faded-office.png");
-    background-size: cover;
+    margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    margin-top: 0;
+    font-family: inherit;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    margin-top: 10px;
+    font-family: inherit;
+    align-items: center;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1D3557;
+    margin-top: 0;
+    font-family: inherit;
+    align-items: center;
+}
+
+h4 {
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+/* HERO SECTION */
+.about-section {
+    background: url("images/torshov.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 343px;
+    padding-top: 120px;
+}
+
+.hero-action-box {
+    background-color: #1d3557;
+    height: 42px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 225px;
+}
+
+.hero-advert-text-box {
+    background-color: #457B9D;
+    height: 52px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 412px;
+    padding: 5px
+}
+
+/* ACTIVITIES SECTION */
+.activities-section {
+    background-color: #F1FAEE;
+}
+
+.activities-list {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.activity-card {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.activity-card-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.activity-card-description {
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
 }
