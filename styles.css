@@ -31,6 +31,10 @@ h1 {
 /* =================
 Layout
 ================= */
+main {
+     max-width: 700px;
+     margin: 5rem auto;
+}
 
 .container {
     width: 90%;
@@ -99,4 +103,9 @@ nav a:focus {
     nav li {
         margin: .5em 0;
     }
+}
+
+/* images */
+.article-image {
+    width: 100%;
 }
