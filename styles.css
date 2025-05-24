@@ -218,8 +218,8 @@ nav a:focus {
 
 .sidebar-widget {
   border: 20px solid #EBEBEB;
-  margin: 16px 0;
-  padding: 16px;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 .widget-recent-post {
@@ -251,4 +251,5 @@ nav a:focus {
 }
 .widget-image {
   order: 1;
+  max-width: 150px;
 }
