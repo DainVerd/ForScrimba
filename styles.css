@@ -1,12 +1,7 @@
-/*  Fonts
------
-font-family: 'Lora', serif;
-font-family: 'Ubuntu', sans-serif;
-*/
 
 body {
     margin: 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Source Sans', sans-serif;
     font-size: 1.125rem;
     font-weight: 300;
 }
