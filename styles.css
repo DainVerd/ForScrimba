@@ -1,7 +1,94 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 
 body {
-    margin: 0;
-    font-family: 'Source Sans', sans-serif;
-    font-size: 1.125rem;
-    font-weight: 300;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif; 
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  color: #404040;
+  line-height: 1.6;
+}
+
+/*
+
+Typography
+*/
+h1 {
+  font-size: 2.25rem;
+  margin: 0;
+  color: #FFFF;
+  margin: 2em 0;
+  font-weight: 300;
+
+}
+
+h2 {
+  font-size: 1.31rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+strong {
+  font-weight: 900;
+}
+
+
+h2 + p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/*
+LAYOUT
+*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+   max-width: 650px;
+}
+
+
+.intro {
+  background-image: url("./img/bbq-ribs.jpg");
+  background-size: cover;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+.intro > p {
+  font-weight: bold;
+}
+
+.top-text {
+  order: -1;
+  letter-spacing: 1.5px;
+}
+
+.main-content {
+  padding: 1rem 2rem;
+}
+
+.fine-print {
+  font-size: 0.625rem;
+  letter-spacing: 1px;
+}
+
+/*
+Utils
+*/
+
+.text-to-upper-case {
+  text-transform: uppercase;
+}
+.secondary-color {
+  color: #F18119;
 }
