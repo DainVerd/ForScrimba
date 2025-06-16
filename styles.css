@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  font-family: 'Source Sans Pro', sans-serif; 
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
@@ -39,7 +39,7 @@ strong {
 }
 
 
-h2 + p {
+h2+p {
   margin-top: 0.5rem;
   font-weight: bold;
 }
@@ -51,7 +51,7 @@ LAYOUT
 .container {
   display: flex;
   flex-direction: column;
-   max-width: 650px;
+  max-width: 650px;
 }
 
 
@@ -59,12 +59,11 @@ LAYOUT
   background-image: url("./img/bbq-ribs.jpg");
   background-size: cover;
   background-color: black;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   padding: 0 2rem;
 }
-.intro > p {
+
+.intro>p {
   font-weight: bold;
 }
 
@@ -89,6 +88,43 @@ Utils
 .text-to-upper-case {
   text-transform: uppercase;
 }
+
 .secondary-color {
   color: #F18119;
+}
+
+.light-text {
+  font-weight: lighter;
+}
+
+/*
+Media query with size bigger than 650px
+*/
+
+@media (min-width: 650px) {
+  body {
+    display: flex;
+    min-height: 100vh;
+    font-size: 1.125rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .main-content,
+  .intro {
+    width: 50%;
+
+  }
+
+  .main-content {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
