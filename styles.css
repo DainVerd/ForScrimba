@@ -9,16 +9,10 @@ body {
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
-  font-weight: 400;
-  text-align: center;
   color: #404040;
-  line-height: 1.6;
+  text-align: center;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
 
 /*
 
@@ -53,19 +47,17 @@ h2+p {
 LAYOUT
 */
 
-.container {
-  display: flex;
-  flex-direction: column;
-  max-width: 650px;
-}
 
 
 .intro {
   background-image: url("./img/bbq-ribs.jpg");
-  background-size: cover;
-  background-color: black;
+  background-color: #404040;
+  background-position: center;
+  padding: 0 .5em 2em;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  padding: 0 2rem;
+  min-height: 50vh;
 }
 
 .intro>p {
@@ -76,8 +68,8 @@ LAYOUT
   margin: 0;
   order: -1;
   letter-spacing: 1.5px;
-  border-top: 30px solid magenta;
-  /* better use span than apply style to <p>*/
+  border-top: 5px solid #F18119;
+  border-image: linear-gradient(red, blue) 1;
   max-width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -91,6 +83,13 @@ LAYOUT
 .fine-print {
   font-size: 0.625rem;
   letter-spacing: 1px;
+}
+
+.intro>*,
+.main-content>* {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*
@@ -110,13 +109,72 @@ Utils
 }
 
 /*
+FORM
+*/
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.email-collector {
+  width: 80%;
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+input,
+.btn {
+  width: 100%;
+  border-radius: 3px;
+}
+
+input {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  text-align: inherit;
+  padding: .25rem;
+  border: 1px solid #404040;
+  transition: scale(1);
+  transition: transform 25ms
+}
+
+input:focus {
+  transform: scale(1.1);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(to left, #ff713b, #ffa51d);
+  color: white;
+  transition: 500ms;
+}
+
+.btn-primary:hover,
+:focus {
+  color: black;
+}
+
+/*
 Media query with size bigger than 650px
 */
 
 @media (min-width: 650px) {
   body {
     display: flex;
-    min-height: 100vh;
     font-size: 1.125rem;
   }
 
@@ -128,19 +186,15 @@ Media query with size bigger than 650px
     font-size: 1.75rem;
   }
 
-  .main-content,
-  .intro {
+  .intro,
+  .main-content {
     width: 50%;
-
+    min-height: 100vh;
   }
 
   .main-content {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .intro {
-    justify-content: unset;
   }
 }
