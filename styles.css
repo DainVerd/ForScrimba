@@ -1,6 +1,199 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
 body {
-  font-family: 'Lato', sans-serif;
-  font-size: 18px;
-  color: #2e354f;
   margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  color: #404040;
+  text-align: center;
+}
+
+
+/*
+
+Typography
+*/
+h1 {
+  font-size: 2.25rem;
+  margin: 0;
+  color: #FFFF;
+  margin: 2em 0;
+  font-weight: 300;
+
+}
+
+h2 {
+  font-size: 1.31rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+strong {
+  font-weight: 900;
+}
+
+
+h2+p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/*
+LAYOUT
+*/
+
+
+
+.intro {
+  background-image: url("./img/bbq-ribs.jpg");
+  background-color: #404040;
+  background-blend-mode: overlay;
+  background-position: center;
+  padding: 0 .5em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 50vh;
+}
+
+.intro>p {
+  font-weight: bold;
+}
+
+.top-text {
+  margin: 0;
+  order: -1;
+  letter-spacing: 1.5px;
+  font-weight: 900;
+  border-top: 5px solid #F18119;
+  border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
+}
+
+.main-content {
+  padding: 1rem 2rem;
+}
+
+.fine-print {
+  font-size: 0.625rem;
+  letter-spacing: 1px;
+}
+
+.intro>*,
+.main-content>* {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+Utils
+*/
+
+.text-to-upper-case {
+  text-transform: uppercase;
+}
+
+.secondary-color {
+  color: #F18119;
+}
+
+.light-text {
+  font-weight: lighter;
+}
+
+/*
+FORM
+*/
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.email-collector {
+  width: 80%;
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+input,
+.btn {
+  width: 100%;
+  border-radius: 3px;
+}
+
+input {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  text-align: inherit;
+  padding: .25rem;
+  border: 1px solid #404040;
+  transition: scale(1);
+  transition: transform 25ms
+}
+
+input:focus {
+  transform: scale(1.1);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(to left, #ff713b, #ffa51d);
+  color: white;
+  transition: 500ms;
+}
+
+.btn-primary:hover,
+:focus {
+  color: black;
+}
+
+/*
+Media query with size bigger than 650px
+*/
+
+@media (min-width: 650px) {
+  body {
+    display: flex;
+    font-size: 1.125rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2,
+  h1+p {
+    font-size: 1.75rem;
+  }
+
+  .intro,
+  .main-content {
+    width: 50%;
+    min-height: 100vh;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
