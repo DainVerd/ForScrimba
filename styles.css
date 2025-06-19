@@ -52,6 +52,7 @@ LAYOUT
 .intro {
   background-image: url("./img/bbq-ribs.jpg");
   background-color: #404040;
+  background-blend-mode: overlay;
   background-position: center;
   padding: 0 .5em 2em;
   display: flex;
@@ -68,12 +69,9 @@ LAYOUT
   margin: 0;
   order: -1;
   letter-spacing: 1.5px;
+  font-weight: 900;
   border-top: 5px solid #F18119;
-  border-image: linear-gradient(red, blue) 1;
-  max-width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-
+  border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
 }
 
 .main-content {
@@ -182,7 +180,8 @@ Media query with size bigger than 650px
     font-size: 3.5rem;
   }
 
-  h2 {
+  h2,
+  h1+p {
     font-size: 1.75rem;
   }
 
