@@ -10,10 +10,9 @@
   color: white;
   width: 90%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   max-width: 37.5rem;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 200px auto auto 200px;
 }
 
 .card-title,
@@ -23,25 +22,39 @@
 }
 
 .card-img {
-  object-fit: cover;
-  grid-row: 1 / 2;
-  grid-column: 1 / -1;
-  /* This properties says what image must match size of rect of the row/ column */
   width: 100%;
-  height: 100%;
+  object-fit: cover;
+  flex-basis: 200px;
+  min-width: 0;
+  min-height: 0;
+}
+
+.card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-title {
   font-size: 1.75rem;
   color: #05CBE9;
-  grid-column: 1 / -1;
+  margin: 0;
 }
 
 .card-body {
   font-size: 1rem;
-  grid-column: 1 / -1;
 }
 
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 2rem;
+}
+
+.card-footer>p {
+  margin: 0;
+}
 
 .card-btn {
   font-size: 1.25rem;
@@ -51,28 +64,12 @@
   background-color: #05CBE9;
   color: #111D4A;
   letter-spacing: 1px;
-  align-self: end;
-  justify-self: end;
-
 }
 
 .card-btn:focus,
 .card-btn:active {
   background-color: #111D4A;
   color: #05CBE9;
-}
-
-.card-read-time {
-    margin: 0;
-    opacity: .6;
-    line-height: 1;
-    align-self: end;
-}
-
-.card-read-time span {
-    font-weight: 700;
-    display: block;
-    font-size: 1.25em;
 }
 
 
@@ -104,4 +101,7 @@ Media query with size bigger than 650px
     font-size: 1.125rem;
   }
 
+  .card-footer {
+    margin-top: auto;
+  }
 }
