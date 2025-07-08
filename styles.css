@@ -84,8 +84,7 @@ Media query with size bigger than 650px
   }
 
   .card-img {
-    width: 25%;
-    height: 300px;
+    min-width: 25%;
   }
 
   .card-body {
