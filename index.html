@@ -4,23 +4,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./styles.css">
-<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,900italic,900,700italic,700,600italic,600,400italic,300italic,300,200italic' rel='stylesheet' type='text/css'>
-        <link href="https://fonts.googleapis.com/css?family=Blinker:400,700|Source+Sans+Pro&display=swap" rel="stylesheet">
-
+  <title>responsive home page my v1</title>
+  <!-- https://xd.adobe.com/spec/f255d364-6d5e-4aaf-7703-6f8d0a398281-8464/grid/ -->
 </head>
 
 <body>
-  <div class="card">
-    <img class="card-img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.liquidweb.com%2Fwp-content%2Fuploads%2F2024%2F03%2Fsdxl-3-1024x576-1.png&f=1&nofb=1&ipt=555cac01d201caea9490a64481b5cd13def32f6dab0d1f155082c80dc4e2f992" alt="an iphone on a macbook with dramatic lighting">
-    <div class="card-content">
-      <h2 class="card-title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</h2>
-      <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet ligula eget libero molestie pulvinar at ac metus. Morbi leo ante, dictum eu metus vel, varius posuere dolor. Donec laoreet efficitur velit, euismod posuere orci imperdiet in. </p>
-      <div class="card-footer">
-        <p><span>15</span> minut read</p>
-        <a class="card-btn" href="#">read more</a>
+  <header>
+    <div>
+      <div class="site-title">
+        <h1>Living the social life</h1>
+        <p class="subtitle">A blog exploring minimalism in life</p>
       </div>
+      <nav>
+        <ul>
+          <li><a href="#index.html" class="current-page">Home</a></li>
+          <li><a href="#about-me.html">About me</a></li>
+          <li><a href="#recent-posts.html">Recent posts</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
+  </header>
+  <main>
+    <!-- description of the dude -->
+    <div class="description">
+      <p>
+        <bold>The only marketing agency on<span class="primary"> a mission from God</span>, fully dedicated to increase
+          your web traffic.
+        </bold>
+      </p>
+      <p>
+        We're two brothers from Chicago that are trying to pay back our debt. We can help you with <bold>SEO, SEM,
+          content marketing</bold> and whatever else.
+      </p>
+      <button class="btn primary">
+        contact us
+      </button>
+    </div>
+    <!-- cards with 3 columns -->
+    <div class="skill-set">
+      <section>
+        <h2 class="skill-set-heading">About Us </h2>
+        <p class="skill-set-body">
+          We grew up in downtown Chicago, and we used to play in a band. <bold>Jake loves fried chicken</bold>, and
+          <bold>Elwood loves dry white toast</bold>.
+        </p>
+      </section>
+      <section>
+        <h2 class="skill-set-heading">Our skills</h2>
+        <p class="skill-set-heading">
+          Elwood is an expert in <bold>SEO, SEM, and driving from the police</bold>. Jake is our <bold>social media
+            specialist</bold>, and he has an amazing voice.
+        </p>
+      </section>
+      <section>
+        <h2 class="skill-set-heading">Get in touch</h2>
+        <p class="skill-set-heading">
+          Send us an email with some info about what help you need and <bold>we'll drive over to your place</bold> in
+          our Bluesmobile the following day to discuss the deal.
+        </p>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <!-- footer main -->
+    <div class="footer-main">
+      <h1 class="footer-heading">Jake&Elwood</h1>
+      <p class="footer-body">Two brothers from Chicago that are just trying to pay back their debt by helping others
+        with their SEO, SEM,
+        and Content Marketing needs.</p>
+      <p class="footer-copy-right">© Jake&Elwood 2019</p>
+    </div>
+    <!-- public media -->
+    <ul class="social-list">
+      <li class="social-item"><a href="#" class="social-link"></a></li>
+      <li class="social-item"><a href="#" class="social-link"></a></li>
+      <li class="social-item"><a href="#" class="social-link"></a></li>
+    </ul>
+  </footer>
 </body>
+
 </html>
