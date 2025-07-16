@@ -84,6 +84,12 @@ header
   background: black;
 }
 
+.header-home {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+}
+
 .header-content {
   display: flex;
   grid-column: 2 / -2;
@@ -149,6 +155,35 @@ header
   font-size: 1.5em;
 }
 
+@media (min-width: 600px) {
+
+  .open-nav,
+  .close-nav {
+    display: none;
+  }
+
+  .nav {
+    position: initial;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .nav-item {
+    margin-left: 2em;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .header-home .nav {
+    background: transparent;
+  }
+}
+
 /*========================
 hero 
 ==========================*/
@@ -158,16 +193,23 @@ hero
   background-size: cover;
   background-position: bottom;
   color: #fff;
-  padding: 2rem 0;
+  padding: 8rem 0 4rem;
 }
 
 .hero>* {
   grid-column: 2/-2;
 }
 
+@media (min-width: 400px) {
+  .hero>* {
+    margin-right: 20%;
+  }
+}
+
 @media (min-width: 600px) {
+
   .hero {
-    padding: 6em 0;
+    padding: 10em 0 6em;
   }
 
   .hero>* {
