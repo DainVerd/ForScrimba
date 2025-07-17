@@ -6,7 +6,6 @@
 
 img {
   max-width: 100%;
-  display: block;
 }
 
 body {
@@ -54,6 +53,17 @@ h2 {
   text-align: center;
   max-width: 618px;
   justify-self: center;
+  margin: .5rem 0 3rem;
+}
+
+.section-title {
+  font-size: 1.125rem;
+  color: #000;
+  margin-top: 1.25rem;
+}
+
+.section-title:first-child {
+  margin-top: 0;
 }
 
 /* button */
@@ -340,10 +350,14 @@ FOOTER
   grid-column: 2 / -2;
 
 }
+.main-image {
+  margin-bottom: 1rem;
+}
 
 @media (min-width: 600px) {
   .main-image {
     grid-column: 2;
+    margin-bottom: 0;
   }
 
   .main-text {
