@@ -38,6 +38,10 @@ h2 {
   margin-bottom: 0;
 }
 
+.hero-body {
+  font-size: 1.125rem;
+}
+
 .accent-color {
   color: #FFE600;
 }
@@ -121,6 +125,9 @@ h2 {
   justify-self: end;
 }
 
+.current {
+  border-bottom: 1px solid #FFE600;
+}
 
 
 /* ==================
